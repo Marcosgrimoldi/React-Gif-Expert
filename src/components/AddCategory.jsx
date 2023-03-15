@@ -13,8 +13,8 @@ export const AddCategory = ({ onNewCategory }) => {
     if (inputValue.trim().length <= 1) return;
 
     
-    onNewCategory(inputValue.trim());
     setinputValue("");
+    onNewCategory(inputValue.trim());
   };
   return (
     <form onSubmit={onSubmit}>
